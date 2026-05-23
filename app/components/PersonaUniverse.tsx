@@ -18,7 +18,7 @@ export const PersonaUniverse: React.FC<PersonaUniverseProps> = ({ spheres }) => 
     <div className="w-full h-full relative">
       <Canvas
         camera={{ position: [0, 2, 16], fov: 35 }}
-        gl={{ antialias: true, toneMappingExposure: 1.2 }}
+        gl={{ alpha: true, antialias: true, toneMappingExposure: 1.2 }}
         shadows
       >
         {/* Background removed for transparent gradient */}

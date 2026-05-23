@@ -77,7 +77,7 @@ const AnalyzingContent: React.FC<AnalyzingSphereSceneProps> = ({ scenePhase, onP
 
   return (
     <>
-      <EffectComposer disableNormalPass>
+      <EffectComposer enableNormalPass={false}>
         <Bloom
           luminanceThreshold={0.9} // Only highlights glow
           mipmapBlur

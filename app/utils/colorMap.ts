@@ -13,7 +13,7 @@ const EMOTION_COLORS = {
   embarrassment: '#FF9ECD', // Soft pink - Vulnerability, self-consciousness
   anger: '#E63946',      // Intense red - Strong negative emotions
   fear: '#9B59B6',       // Purple - Uncertainty, caution
-  neutral: '#A8B5C7'     // Soft grey-blue - Neutral/other
+  neutral: '#FFFDD0'     // Glowing cream/pearl - Neutral/other
 };
 
 export function getSphereColor(sentimentScore: number, category?: PostCategory): string {

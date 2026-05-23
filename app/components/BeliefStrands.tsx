@@ -59,30 +59,6 @@ export const BeliefStrands: React.FC<BeliefStrandsProps> = ({ spheres, visible }
                     transparent
                 />
             ))}
-            {/* Central Pillar Glow - Glowing Gradient Blue */}
-            <mesh position={[0, 0, 0]}>
-                <cylinderGeometry args={[0.5, 4, 20]} />
-                <meshBasicMaterial
-                    color="#4A90E2"
-                    opacity={0.15}
-                    transparent
-                    side={THREE.DoubleSide}
-                    blending={THREE.AdditiveBlending}
-                    depthWrite={false}
-                />
-            </mesh>
-            {/* Inner brighter blue core for gradient effect */}
-            <mesh position={[0, 0, 0]}>
-                <cylinderGeometry args={[0.3, 2.5, 20]} />
-                <meshBasicMaterial
-                    color="#6CB4EE"
-                    opacity={0.25}
-                    transparent
-                    side={THREE.DoubleSide}
-                    blending={THREE.AdditiveBlending}
-                    depthWrite={false}
-                />
-            </mesh>
         </group>
     );
 };

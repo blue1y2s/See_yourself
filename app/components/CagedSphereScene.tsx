@@ -108,7 +108,7 @@ const CagedContent: React.FC<CagedSphereSceneProps> = ({ scenePhase, onPhaseChan
 export const CagedSphereScene: React.FC<CagedSphereSceneProps> = (props) => {
   return (
     <div className="w-full h-full relative">
-      <Canvas camera={{ position: [0, 0, 6] }}>
+      <Canvas camera={{ position: [0, 0, 6] }} gl={{ alpha: true }}>
         {/* Background removed for transparent gradient */}
         <CagedContent {...props} />
       </Canvas>
